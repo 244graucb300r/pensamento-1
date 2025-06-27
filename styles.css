@@ -1,168 +1,60 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Toore Flix</title>
-<!-- Link para uma fonte estilosa -->
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet" />
-<style>
-    /* Seu CSS atualizado e melhorado */
-    body {
-        color: white;
-        background: #000;
-        margin: 0;
-        font-family: "Chakra Petch", sans-serif;
-        margin-bottom: 100px;
-    }
+body {
+    color: white;
+    background: black;
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
 
-    /* Header com logo e título */
-    header {
-        display: flex;
-        align-items: center;
-        border-bottom: 2px solid rgb(0, 255, 76);
-        padding: 20px;
-        background-color: #000;
-    }
+header {
+    border-bottom: solid 2px rgb(0, 255, 76);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(0, 255, 21);
+}
 
-    /* Logo estilizado */
-    .logo {
-        display: flex;
-        align-items: center;
-        font-size: 36px;
-        font-weight: bold;
-        color: rgb(0, 255, 21);
-        font-family: "Chakra Petch", sans-serif;
-        margin-right: 20px;
-        letter-spacing: 2px;
-    }
+.chamada {
+    background: rgba(1, 148, 45, 0.986);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
 
-    /* Ícone do logo (pode usar emoji ou SVG) */
-    .logo-icon {
-        font-size: 40px;
-        margin-right: 10px;
-        animation: pulse 2s infinite;
-    }
+.chamada-texto {
+    margin-right: 5%;
+}
 
-    /* Animação do ícone */
-    @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.2); }
-        100% { transform: scale(1); }
-    }
+h1 {
+    font-size: 40px;
+}
 
-    /* Título do site ao lado do ícone */
-    .logo-text {
-        font-family: "Chakra Petch", sans-serif;
-    }
+p {
+    font-size: 20px;
+}
 
-    /* Seção de chamada com destaque */
-    .chamada {
-        background: rgba(1, 148, 45, 0.986);
-        padding: 80px 20px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-    }
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
 
-    .chamada-texto {
-        max-width: 600px;
-        margin: 0 20px;
-    }
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
 
-    h1 {
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
+}
 
-    p {
-        font-size: 20px;
-        line-height: 1.5;
-    }
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid green;
+}
 
-    /* Categorias e vídeos */
-    .categoria {
-        padding: 20px;
-        margin-top: 50px;
-    }
-
-    .categoria h2 {
-        color: rgb(60, 255, 0);
-        margin-bottom: 20px;
-        font-size: 28px;
-    }
-
-    .categoria-videos {
-        display: flex;
-        overflow-x: auto;
-        gap: 10px;
-        padding-bottom: 10px;
-    }
-
-    .categoria-videos img {
-        opacity: 0.5;
-        height: 200px;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-    }
-
-    .categoria-videos img:hover {
-        opacity: 1;
-        border: 3px solid green;
-        transform: scale(1.05);
-    }
-
-    /* Melhorias para responsividade */
-    @media(max-width: 768px) {
-        header {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        h1 {
-            font-size: 30px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    }
-</style>
-</head>
-<body>
-
-<header>
-    <div class="logo">
-        <div class="logo-icon">🎬</div> <!-- Ícone do logo, pode trocar por SVG ou outro emoji -->
-        <div class="logo-text">Toore Flix</div>
-    </div>
-</header>
-
-<section class="chamada">
-    <div class="chamada-texto">
-        <h1>Bem-vindo ao Toore Flix!</h1>
-        <p>Assista aos melhores vídeos e séries. Explore nossas categorias e divirta-se!</p>
-    </div>
-</section>
-
-<section class="categoria">
-    <h2>Filmes</h2>
-    <div class="categoria-videos">
-        <img src="https://via.placeholder.com/200x200.png?text=Filme+1" alt="Filme 1" />
-        <img src="https://via.placeholder.com/200x200.png?text=Filme+2" alt="Filme 2" />
-        <img src="https://via.placeholder.com/200x200.png?text=Filme+3" alt="Filme 3" />
-        <img src="https://via.placeholder.com/200x200.png?text=Filme+4" alt="Filme 4" />
-    </div>
-</section>
-
-<!-- Adicione mais categorias conforme necessário -->
-
-</body>
-</html>
+.categoria h2 {
+    color: rgb(85, 228, 42);
+}
